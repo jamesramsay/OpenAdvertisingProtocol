@@ -509,7 +509,17 @@
 										</xs:annotation>
 									</xs:element>
 									<xs:element name="index" type="IndexedValue" minOccurs="0"/>
-									<xs:element name="quantity" type="Quantity" minOccurs="0" maxOccurs="unbounded"/>
+                  <xs:element name="quantity" type="Quantity" minOccurs="0" maxOccurs="unbounded"/>
+                  <xs:element name="start" type="" minOccurs="0">
+                    <xs:annotation>
+                      <xs:documentation>The beginning of a ranged data point. E.g. "25" (Name: "aged 25-34")</xs:documentation>
+			       				</xs:annotation>
+                  </xs:element>
+                  <xs:element name="end" type="" minOccurs="0">
+                    <xs:annotation>
+      								<xs:documentation>The end of a ranged data point. E.g. "34" (Name: "aged 25-34") </xs:documentation>
+			      				</xs:annotation>
+                  </xs:elemetn>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
