@@ -200,14 +200,14 @@
 			<xs:element name="name"/>
 			<xs:element name="isIABStandard" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Indicates whether or not this is an IAB Standard Ad Unit</xs:documentation>
+					<xs:documentation>Indicates whether or not this is an IAB Standard Ad Unit.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="initialDimensions"/>
 			<xs:element name="maxExpandedDimensions" minOccurs="0"/>
-			<xs:element name="maxInitialFileLoadSize">
+			<xs:element name="maxInitialFileSize" type:"xs:integer">
 				<xs:annotation>
-					<xs:documentation>The maximum size of the creative file.</xs:documentation>
+					<xs:documentation>Maximum size of the creative file (KB).</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="supportedMediaTypes" minOccurs="0">
