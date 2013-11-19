@@ -13,7 +13,7 @@
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="name" type="Name"/>
-			<xs:element name="seller" type="Transactor"/>
+			<xs:element name="seller" type="Merchant"/>
 			<xs:element name="identifier" type="Identifier" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="lastUpdated" type="xs:dateTime"/>
 			<xs:element name="description" type="Note" minOccurs="0"/>
@@ -59,6 +59,7 @@
 			<xs:element name="identifier" type="Identifier" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="description" type="Note" minOccurs="0"/>
 			<xs:element name="channel" type="Channel"/>
+			<xs:element name="category" type="Category" minOccurs="0" maxOccurs="unbounded"/>      
 			<xs:element name="adUnit" type="AdUnit"/>
 			<xs:element name="standardRate" type="Rate" minOccurs="0"/>
 			<xs:element name="ourRate" type="Rate" minOccurs="0">
